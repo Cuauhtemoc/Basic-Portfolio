@@ -1,6 +1,8 @@
 *{
     list-style-type: none;
     box-sizing: border-box;
+    text-decoration: none;
+
 }
 html{
   
@@ -10,7 +12,6 @@ body{
     background: url(../../assets/images/what-the-hex.png);
     margin: 0;
     min-height: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -18,10 +19,10 @@ body{
 .content-wrapper{
     display: flex;
     flex-direction: column;
-    width: 960px;
-    margin: 2% auto auto auto;
+    width: 60%;
+    min-width: 480px;
+    margin: 2% auto 40px auto;
     background: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     border-style: solid;
     border-width: 2px;
     border-color: #cccccc;
@@ -37,12 +38,28 @@ body{
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
+    border: rgb(4, 92, 99) solid 2px;
 }
 
-.heading{
-    border-bottom: #cccccc solid 1px;
-    padding: 10px;
+.button{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 0;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    border: rgb(4, 92, 99) solid 2px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+.heading{
+    border-bottom: #cccccc solid 2px;
+    color: teal;
+    margin: 0;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: center;
+}
+
 .topnav{
     background: #ffffff;
     border-bottom: #cccccc solid 2px;
@@ -51,7 +68,8 @@ body{
 
 .menu{
     display: flex;
-    width: 960px;
+    width: 60%;
+    min-width: 480px;
     align-items: center;
     margin: auto;
 
@@ -62,17 +80,16 @@ body{
 }
 .menu-links > a{
     padding: 10px;
-    text-decoration: none;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 
 }
 
-.contact-form, {
-    padding: 5px;
-    list-style-type: none;
+.contact-form {
+    padding: 10px;
     margin-left: 3%;
     margin-right: 3%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .form-row{
     list-style-type: none;
@@ -93,12 +110,24 @@ body{
     background: #666666;
     border-top: teal solid 7px;
     margin-top: auto;
+    text-align: center;
 
 }
-
+.myface{
+    height: 200px;
+    width: 200px;
+    padding:10px;
+}
+.bio{
+    padding: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.content-about{
+    display: flex;
+}
 .content-images{
     padding: 10px;
-    margin-right: 33.3%;
+    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -106,8 +135,7 @@ body{
 .image{
     margin: 10px 10px;
     position: relative;
-
-
+    border: rgb(4, 92, 99) solid 2px;
 }
 .image-text{
     display: flex;
@@ -121,8 +149,12 @@ body{
     left:0;
     background: teal;
     color: #ffffff;
+    border: rgb(4, 92, 99) solid 2px;
 }
 
+a:hover, .button:hover, .image-text>a:hover{
+    color: blue;
+}
 
 
 
