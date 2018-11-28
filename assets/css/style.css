@@ -76,8 +76,6 @@ body{
     height: 80px;
 }
 .myface{
-    height: 200px;
-    width: 200px;
     padding:10px;
 }
 .bio{
@@ -134,6 +132,10 @@ body{
 .form-message>input{
     width: 100%;
     height: 100px;
+}
+#message{
+    width: 100%;
+    resize: none;
 }
 /* footer and anchor styling below*/
 .footer{
